@@ -1,5 +1,9 @@
 const clock = document.querySelector("#clock");
+setInterval(function () {
+  const time = new Date();
 
+  clock.innerHTML = `<span>${time.toLocaleTimeString()}</span>`;
+}, 1000);
 // console.log(time.toLocaleTimeString());
 
 //syntax :
@@ -7,8 +11,4 @@ const clock = document.querySelector("#clock");
 
 //setInterval is a function that executes given function every given time interval.
 
-setInterval(function () {
-  const time = new Date();
 
-  clock.innerHTML = `<span>${time.toLocaleTimeString()}</span>`;
-}, 10);
