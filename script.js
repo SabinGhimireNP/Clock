@@ -11,4 +11,6 @@ setInterval(function () {
   const time = new Date();
 
   clock.innerHTML = `<span>${time.toLocaleTimeString()}</span>`;
-}, 1000);
+}, 1);
+
+console.log(clock.parentElement);
